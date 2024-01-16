@@ -31,9 +31,32 @@ body {
   background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), radial-gradient(ellipse at bottom, var(--dark-color), rgba(145, 233, 255, 0.2)), repeating-linear-gradient(220deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(189deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(148deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), linear-gradient(90deg, rgb(7, 107, 42), rgb(240, 240, 240));
 }
 
+.msg {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 5vw;
+  top: 5vh;
+  color: #fff;
+}
+
+.msg p {
+  font-size: 24px;
+  margin-top: 10px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.love {
+  width: 300px;
+  border-radius: 1vw;
+  margin: 20px auto;
+}
+
 .flowers {
   position: relative;
   transform: scale(0.9);
+  opacity: 0.5;
 }
 
 .flower {
